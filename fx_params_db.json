@@ -1,0 +1,4346 @@
+{
+  "OPTCOMP": [
+    {
+      "name": "Drive",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "DCOMP": [
+    {
+      "name": "Sense",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "ATTCK",
+      "type": "enum",
+      "options": [
+        "Slow",
+        "Fast"
+      ]
+    }
+  ],
+  "MCOMP": [
+    {
+      "name": "THRSH",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Ratio",
+      "type": "range",
+      "min": 1,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "ATTCK",
+      "type": "range",
+      "min": 1,
+      "max": 10
+    }
+  ],
+  "DUALCOMP": [
+    {
+      "name": "Hi",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Lo",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Freq",
+      "type": "range",
+      "min": 300,
+      "max": 1500,
+      "unit": "Hz"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    }
+  ],
+  "160COMP": [
+    {
+      "name": "THRSH",
+      "type": "range",
+      "min": -60,
+      "max": 0
+    },
+    {
+      "name": "Ratio",
+      "type": "range",
+      "min": 1.0,
+      "max": 10.0
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 20
+    },
+    {
+      "name": "Knee",
+      "type": "enum",
+      "options": [
+        "Hard",
+        "Soft"
+      ]
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "LIMITER": [
+    {
+      "name": "THRSH",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Ratio",
+      "type": "range",
+      "min": 1,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "REL",
+      "type": "range",
+      "min": 1,
+      "max": 10
+    }
+  ],
+  "SLOWATTACK": [
+    {
+      "name": "Time",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Curve",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "ZNR": [
+    {
+      "name": "THRSH",
+      "type": "range",
+      "min": 1,
+      "max": 25
+    },
+    {
+      "name": "DETCT",
+      "type": "enum",
+      "options": [
+        "GtrIn",
+        "EfxIn"
+      ]
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BAGEQ": [
+    {
+      "name": "50Hz",
+      "type": "range",
+      "min": -12,
+      "max": 12
+    },
+    {
+      "name": "120Hz",
+      "type": "range",
+      "min": -12,
+      "max": 12
+    },
+    {
+      "name": "400Hz",
+      "type": "range",
+      "min": -12,
+      "max": 12
+    },
+    {
+      "name": "500Hz",
+      "type": "range",
+      "min": -12,
+      "max": 12
+    },
+    {
+      "name": "800Hz",
+      "type": "range",
+      "min": -12,
+      "max": 12
+    },
+    {
+      "name": "4.5kHz",
+      "type": "range",
+      "min": -12,
+      "max": 12
+    },
+    {
+      "name": "10kHz",
+      "type": "range",
+      "min": -12,
+      "max": 12
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BAPEQ": [
+    {
+      "name": "Freq1",
+      "type": "range",
+      "min": 20,
+      "max": 20000,
+      "unit": "Hz"
+    },
+    {
+      "name": "Q1",
+      "type": "enum",
+      "options": [
+        "0.5",
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "name": "Gain1",
+      "type": "range",
+      "min": -20,
+      "max": 20
+    },
+    {
+      "name": "Freq2",
+      "type": "range",
+      "min": 20,
+      "max": 20000,
+      "unit": "Hz"
+    },
+    {
+      "name": "Q2",
+      "type": "enum",
+      "options": [
+        "0.5",
+        "1",
+        "2",
+        "4",
+        "8",
+        "16"
+      ]
+    },
+    {
+      "name": "Gain2",
+      "type": "range",
+      "min": -20,
+      "max": 20
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "SPLITTER": [
+    {
+      "name": "Hi",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Lo",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Freq",
+      "type": "range",
+      "min": 80,
+      "max": 2500,
+      "unit": "Hz"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BOTTOMB": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "EXCITER": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BAAUTOWAH": [
+    {
+      "name": "Sense",
+      "type": "range",
+      "min": -10,
+      "max": 10,
+      "notes": "valido -10..-1 e 1..10, lo 0 e' escluso"
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Dry",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "ZTRON": [
+    {
+      "name": "Sense",
+      "type": "range",
+      "min": -10,
+      "max": 10,
+      "notes": "valido -10..-1 e 1..10, lo 0 e' escluso"
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Dry",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "MFILTER": [
+    {
+      "name": "Freq",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Sense",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Type",
+      "type": "enum",
+      "options": [
+        "HPF",
+        "BPF",
+        "LPF"
+      ]
+    },
+    {
+      "name": "Chara",
+      "type": "enum",
+      "options": [
+        "2Pole",
+        "4Pole"
+      ]
+    },
+    {
+      "name": "VLCTY",
+      "type": "enum",
+      "options": [
+        "Fast",
+        "Slow"
+      ]
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "AFILTER": [
+    {
+      "name": "Sense",
+      "type": "range",
+      "min": 1,
+      "max": 10
+    },
+    {
+      "name": "Peak",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Mode",
+      "type": "enum",
+      "options": [
+        "Up",
+        "Down"
+      ]
+    },
+    {
+      "name": "Dry",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BACRY": [
+    {
+      "name": "Range",
+      "type": "range",
+      "min": 1,
+      "max": 10
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Sense",
+      "type": "range",
+      "min": -10,
+      "max": 10,
+      "notes": "valido -10..-1 e 1..10"
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "STEP": [
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Shape",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "SEQFLTR": [
+    {
+      "name": "Step",
+      "type": "range",
+      "min": 2,
+      "max": 8
+    },
+    {
+      "name": "PTTRN",
+      "type": "range",
+      "min": 1,
+      "max": 8
+    },
+    {
+      "name": "Speed",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Shape",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "RNDMFILTER": [
+    {
+      "name": "Speed",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Range",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Type",
+      "type": "enum",
+      "options": [
+        "HPF",
+        "BPF",
+        "LPF"
+      ]
+    },
+    {
+      "name": "Chara",
+      "type": "enum",
+      "options": [
+        "2Pole",
+        "4Pole"
+      ]
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BABOOST": [
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BASSOD": [
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "BASSMUFF": [
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Mode",
+      "type": "enum",
+      "options": [
+        "NORM",
+        "BsBST"
+      ]
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "TSDRY": [
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "BADIST1": [
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "BASQUEAK": [
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "BAFZSMILE": [
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "BAMETAL": [
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "BASSDRIVE": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Prese",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Blend",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    }
+  ],
+  "DIPLUS": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Blend",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Color",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ]
+    },
+    {
+      "name": "CHAN",
+      "type": "enum",
+      "options": [
+        "CLN",
+        "DIST"
+      ]
+    }
+  ],
+  "BASSBB": [
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Blend",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "DI5": [
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 6,
+      "notes": "0 = OFF, poi 1..6"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "HiCut",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ]
+    }
+  ],
+  "BASSPRE": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Freq",
+      "type": "range",
+      "min": 100,
+      "max": 4500,
+      "unit": "Hz"
+    }
+  ],
+  "ACBSPRE": [
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "L-Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "LM_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "H-Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    }
+  ],
+  "SVT": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Ultra",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "Low",
+        "Hi",
+        "Both",
+        "Cut"
+      ]
+    },
+    {
+      "name": "CAB",
+      "type": "enum",
+      "options": [
+        "SVT",
+        "Sp B",
+        "B-Man",
+        "H3500",
+        "SMR",
+        "AgAmp",
+        "GK",
+        "Hvn",
+        "acstc",
+        "Mono",
+        "FLIP",
+        "MarkB",
+        "OFF"
+      ],
+      "notes": "Simulazione cabinet/speaker, vedi Tabella 1 del manuale"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "B_MAN": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Deep",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ]
+    },
+    {
+      "name": "CAB",
+      "type": "enum",
+      "options": [
+        "SVT",
+        "Sp B",
+        "B-Man",
+        "H3500",
+        "SMR",
+        "AgAmp",
+        "GK",
+        "Hvn",
+        "acstc",
+        "Mono",
+        "FLIP",
+        "MarkB",
+        "OFF"
+      ],
+      "notes": "Simulazione cabinet/speaker, vedi Tabella 1 del manuale"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "HRT3500": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Tube",
+      "type": "range",
+      "min": 0,
+      "max": 100,
+      "notes": "mix tra suono valvolare e a transistor"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Comp",
+      "type": "range",
+      "min": 0,
+      "max": 10,
+      "notes": "0 = OFF, poi 1..10"
+    },
+    {
+      "name": "CAB",
+      "type": "enum",
+      "options": [
+        "SVT",
+        "Sp B",
+        "B-Man",
+        "H3500",
+        "SMR",
+        "AgAmp",
+        "GK",
+        "Hvn",
+        "acstc",
+        "Mono",
+        "FLIP",
+        "MarkB",
+        "OFF"
+      ],
+      "notes": "Simulazione cabinet/speaker, vedi Tabella 1 del manuale"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "SMR": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "ENHNC",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "CAB",
+      "type": "enum",
+      "options": [
+        "SVT",
+        "Sp B",
+        "B-Man",
+        "H3500",
+        "SMR",
+        "AgAmp",
+        "GK",
+        "Hvn",
+        "acstc",
+        "Mono",
+        "FLIP",
+        "MarkB",
+        "OFF"
+      ],
+      "notes": "Simulazione cabinet/speaker, vedi Tabella 1 del manuale"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "FLIPTOP": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Ultra",
+      "type": "enum",
+      "options": [
+        "Off",
+        "Low",
+        "Hi",
+        "Both"
+      ]
+    },
+    {
+      "name": "CAB",
+      "type": "enum",
+      "options": [
+        "SVT",
+        "Sp B",
+        "B-Man",
+        "H3500",
+        "SMR",
+        "AgAmp",
+        "GK",
+        "Hvn",
+        "acstc",
+        "Mono",
+        "FLIP",
+        "MarkB",
+        "OFF"
+      ],
+      "notes": "Simulazione cabinet/speaker, vedi Tabella 1 del manuale"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "ACOUSTIC": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "BRGHT",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ]
+    },
+    {
+      "name": "CAB",
+      "type": "enum",
+      "options": [
+        "SVT",
+        "Sp B",
+        "B-Man",
+        "H3500",
+        "SMR",
+        "AgAmp",
+        "GK",
+        "Hvn",
+        "acstc",
+        "Mono",
+        "FLIP",
+        "MarkB",
+        "OFF"
+      ],
+      "notes": "Simulazione cabinet/speaker, vedi Tabella 1 del manuale"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "AGAMP": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Char",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "Deep",
+        "Brght",
+        "Both"
+      ]
+    },
+    {
+      "name": "CAB",
+      "type": "enum",
+      "options": [
+        "SVT",
+        "Sp B",
+        "B-Man",
+        "H3500",
+        "SMR",
+        "AgAmp",
+        "GK",
+        "Hvn",
+        "acstc",
+        "Mono",
+        "FLIP",
+        "MarkB",
+        "OFF"
+      ],
+      "notes": "Simulazione cabinet/speaker, vedi Tabella 1 del manuale"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "MONOTONE": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Char",
+      "type": "enum",
+      "options": [
+        "Dark",
+        "Brght",
+        "Flat"
+      ]
+    },
+    {
+      "name": "CAB",
+      "type": "enum",
+      "options": [
+        "SVT",
+        "Sp B",
+        "B-Man",
+        "H3500",
+        "SMR",
+        "AgAmp",
+        "GK",
+        "Hvn",
+        "acstc",
+        "Mono",
+        "FLIP",
+        "MarkB",
+        "OFF"
+      ],
+      "notes": "Simulazione cabinet/speaker, vedi Tabella 1 del manuale"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "SUPERB": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Prese",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "CAB",
+      "type": "enum",
+      "options": [
+        "SVT",
+        "Sp B",
+        "B-Man",
+        "H3500",
+        "SMR",
+        "AgAmp",
+        "GK",
+        "Hvn",
+        "acstc",
+        "Mono",
+        "FLIP",
+        "MarkB",
+        "OFF"
+      ],
+      "notes": "Simulazione cabinet/speaker, vedi Tabella 1 del manuale"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "G_KRUEGER": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Color",
+      "type": "enum",
+      "options": [
+        "Off",
+        "Low",
+        "Mid",
+        "Hi"
+      ]
+    },
+    {
+      "name": "CAB",
+      "type": "enum",
+      "options": [
+        "SVT",
+        "Sp B",
+        "B-Man",
+        "H3500",
+        "SMR",
+        "AgAmp",
+        "GK",
+        "Hvn",
+        "acstc",
+        "Mono",
+        "FLIP",
+        "MarkB",
+        "OFF"
+      ],
+      "notes": "Simulazione cabinet/speaker, vedi Tabella 1 del manuale"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "HEAVEN": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "ENHNC",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "CAB",
+      "type": "enum",
+      "options": [
+        "SVT",
+        "Sp B",
+        "B-Man",
+        "H3500",
+        "SMR",
+        "AgAmp",
+        "GK",
+        "Hvn",
+        "acstc",
+        "Mono",
+        "FLIP",
+        "MarkB",
+        "OFF"
+      ],
+      "notes": "Simulazione cabinet/speaker, vedi Tabella 1 del manuale"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "MARKB": [
+    {
+      "name": "Bass",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Trebl",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mid_F",
+      "type": "range",
+      "min": 32,
+      "max": 6300,
+      "unit": "Hz"
+    },
+    {
+      "name": "Gain",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Color",
+      "type": "range",
+      "min": 0,
+      "max": 6,
+      "notes": "0..6, non e' un enum di nomi ma un valore numerico"
+    },
+    {
+      "name": "CAB",
+      "type": "enum",
+      "options": [
+        "SVT",
+        "Sp B",
+        "B-Man",
+        "H3500",
+        "SMR",
+        "AgAmp",
+        "GK",
+        "Hvn",
+        "acstc",
+        "Mono",
+        "FLIP",
+        "MarkB",
+        "OFF"
+      ],
+      "notes": "Simulazione cabinet/speaker, vedi Tabella 1 del manuale"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "TREMOLO": [
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Wave",
+      "type": "enum",
+      "options": [
+        "UP0-9",
+        "DWN0-9",
+        "TRI0-9"
+      ],
+      "notes": "onda Up/Down/Triangolo con 10 varianti ciascuna"
+    }
+  ],
+  "SLICER": [
+    {
+      "name": "PTTRN",
+      "type": "range",
+      "min": 1,
+      "max": 20
+    },
+    {
+      "name": "Speed",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "THRSH",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "PHASER": [
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Color",
+      "type": "enum",
+      "options": [
+        "4 STG",
+        "8 STG",
+        "inv 4",
+        "inv 8"
+      ]
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "DUOPHASE": [
+    {
+      "name": "RateA",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "RateB",
+      "type": "range",
+      "min": 1,
+      "max": 50,
+      "notes": "oppure SyncA / RvrsA"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "ResoA",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "ResoB",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Link",
+      "type": "enum",
+      "options": [
+        "Seri",
+        "Para",
+        "STR"
+      ]
+    },
+    {
+      "name": "DPT_A",
+      "type": "range",
+      "min": 1,
+      "max": 100
+    },
+    {
+      "name": "DPT_B",
+      "type": "range",
+      "min": 1,
+      "max": 100
+    }
+  ],
+  "WARPPHASE": [
+    {
+      "name": "Speed",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "DRCTN",
+      "type": "enum",
+      "options": [
+        "Go",
+        "Back"
+      ]
+    }
+  ],
+  "VIBRATO": [
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "THEVIBE": [
+    {
+      "name": "Speed",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Bias",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Wave",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Mode",
+      "type": "enum",
+      "options": [
+        "VIBRT",
+        "CHORS"
+      ]
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BACHORUS": [
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "LoCut",
+      "type": "range",
+      "min": 0,
+      "max": 800,
+      "unit": "Hz",
+      "notes": "min = OFF"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "PreD",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ]
+    }
+  ],
+  "BADETUNE": [
+    {
+      "name": "Cent",
+      "type": "range",
+      "min": -50,
+      "max": 50,
+      "unit": "cent"
+    },
+    {
+      "name": "PreD",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "LoCut",
+      "type": "range",
+      "min": 0,
+      "max": 800,
+      "unit": "Hz",
+      "notes": "min = OFF"
+    }
+  ],
+  "STEREOCHO": [
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BAENSMBL": [
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "CORONATRI": [
+    {
+      "name": "SPEED",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "DEPTH",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "FxLVL",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "TONE",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "DRY",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ]
+    }
+  ],
+  "BAFLANGER": [
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "PreD",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "LoCut",
+      "type": "range",
+      "min": 0,
+      "max": 800,
+      "unit": "Hz",
+      "notes": "min = OFF"
+    }
+  ],
+  "VINFLNGR": [
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "PreD",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BAOCTAVE": [
+    {
+      "name": "Oct",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Dry",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Low",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Mid",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "PITCHSHFT": [
+    {
+      "name": "Shift",
+      "type": "range",
+      "min": -12,
+      "max": 12,
+      "notes": "oppure 24 (ottava sopra)"
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Fine",
+      "type": "range",
+      "min": -25,
+      "max": 25,
+      "unit": "cent"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BAPITCH": [
+    {
+      "name": "Shift",
+      "type": "range",
+      "min": -12,
+      "max": 12,
+      "notes": "oppure 24 (ottava sopra)"
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Fine",
+      "type": "range",
+      "min": -25,
+      "max": 25,
+      "unit": "cent"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "HPS": [
+    {
+      "name": "Scale",
+      "type": "enum",
+      "options": [
+        "-6",
+        "-5",
+        "-4",
+        "-3",
+        "-m",
+        "m",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "notes": "vedi Tabella 2 del manuale per intervallo/scala corrispondente"
+    },
+    {
+      "name": "Key",
+      "type": "enum",
+      "options": [
+        "C",
+        "C#",
+        "D",
+        "D#",
+        "E",
+        "F",
+        "F#",
+        "G",
+        "G#",
+        "A",
+        "A#",
+        "B"
+      ]
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BENDCHO": [
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Time",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Mode",
+      "type": "enum",
+      "options": [
+        "Up",
+        "Down"
+      ]
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "MOJOROLLE": [
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Speed",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Rise",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Mode",
+      "type": "enum",
+      "options": [
+        "Up-Dn",
+        "Up",
+        "Down"
+      ]
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "RINGMOD": [
+    {
+      "name": "Freq",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BITCRUSH": [
+    {
+      "name": "Bit",
+      "type": "range",
+      "min": 4,
+      "max": 16
+    },
+    {
+      "name": "SMPL",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BOMBER": [
+    {
+      "name": "PTTRN",
+      "type": "enum",
+      "options": [
+        "HndGn",
+        "Arm",
+        "Bomb",
+        "Thndr"
+      ]
+    },
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 1,
+      "max": 100
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "THRSH",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Power",
+      "type": "range",
+      "min": 0,
+      "max": 30
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "AUTOPAN": [
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "name": "Width",
+      "type": "range",
+      "min": -50,
+      "max": 50,
+      "notes": "L50..R50, centro 0"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Clip",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    }
+  ],
+  "BASYNTH": [
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Wave",
+      "type": "enum",
+      "options": [
+        "Saw",
+        "Pulse",
+        "PWM"
+      ]
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Synth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Dry",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "STDSYN": [
+    {
+      "name": "Sense",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Sound",
+      "type": "range",
+      "min": 1,
+      "max": 4
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Synth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Dry",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "SYNTLK": [
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Type",
+      "type": "enum",
+      "options": [
+        "iA",
+        "UE",
+        "UA",
+        "oA"
+      ]
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Synth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Dry",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "V_SYN": [
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Sense",
+      "type": "range",
+      "min": 0,
+      "max": 30
+    },
+    {
+      "name": "Range",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Synth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Dry",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "4VOICESYN": [
+    {
+      "name": "ATTCK",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Mode",
+      "type": "range",
+      "min": 1,
+      "max": 9,
+      "notes": "vedi Tabella 3"
+    },
+    {
+      "name": "Scale",
+      "type": "range",
+      "min": 1,
+      "max": 2,
+      "notes": "vedi Tabella 3"
+    },
+    {
+      "name": "Synth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Dry",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "Z_SYN": [
+    {
+      "name": "Wave",
+      "type": "enum",
+      "options": [
+        "Saw",
+        "Sqr"
+      ]
+    },
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Freq",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Range",
+      "type": "range",
+      "min": 0,
+      "max": 20
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": 0,
+      "max": 20
+    },
+    {
+      "name": "Synth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Dry",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "Z_ORGAN": [
+    {
+      "name": "Upper",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Lower",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Dry",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "HPF",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "LPF",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "DEFRET": [
+    {
+      "name": "Sense",
+      "type": "range",
+      "min": 0,
+      "max": 30
+    },
+    {
+      "name": "Color",
+      "type": "range",
+      "min": 1,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    }
+  ],
+  "DELAY": [
+    {
+      "name": "Time",
+      "type": "range",
+      "min": 1,
+      "max": 4000,
+      "unit": "ms"
+    },
+    {
+      "name": "F.B",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "HiDMP",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "P-P",
+      "type": "enum",
+      "options": [
+        "MONO",
+        "P-P"
+      ]
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "TAPEECHO": [
+    {
+      "name": "Time",
+      "type": "range",
+      "min": 1,
+      "max": 2000,
+      "unit": "ms"
+    },
+    {
+      "name": "F.B",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "HiDMP",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "STOMPDLY": [
+    {
+      "name": "E.LVL",
+      "type": "range",
+      "min": 0,
+      "max": 120
+    },
+    {
+      "name": "F.B",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Time",
+      "type": "range",
+      "min": 1,
+      "max": 600,
+      "unit": "ms"
+    },
+    {
+      "name": "Sync",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "tempo-sync"
+      ],
+      "notes": "simboli di nota musicale nel manuale, valori non enumerati chiaramente nel PDF"
+    },
+    {
+      "name": "Mode",
+      "type": "enum",
+      "options": [
+        "MONO",
+        "STR"
+      ]
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    },
+    {
+      "name": "HiDMP",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    }
+  ],
+  "MODDELAY": [
+    {
+      "name": "Time",
+      "type": "range",
+      "min": 1,
+      "max": 2000,
+      "unit": "ms"
+    },
+    {
+      "name": "F.B",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "REVERSEDL": [
+    {
+      "name": "Time",
+      "type": "range",
+      "min": 10,
+      "max": 2000,
+      "unit": "ms"
+    },
+    {
+      "name": "F.B",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Bal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "HiDMP",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "MULTITAPD": [
+    {
+      "name": "Time",
+      "type": "range",
+      "min": 1,
+      "max": 3000,
+      "unit": "ms"
+    },
+    {
+      "name": "PTTRN",
+      "type": "range",
+      "min": 1,
+      "max": 8
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "FILTERDLY": [
+    {
+      "name": "Time",
+      "type": "range",
+      "min": 1,
+      "max": 2000,
+      "unit": "ms"
+    },
+    {
+      "name": "F.B",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "PITCHDLY": [
+    {
+      "name": "Time",
+      "type": "range",
+      "min": 1,
+      "max": 2000,
+      "unit": "ms"
+    },
+    {
+      "name": "Pitch",
+      "type": "range",
+      "min": -12,
+      "max": 12
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "F.B",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "TRGHLDDLY": [
+    {
+      "name": "Time",
+      "type": "range",
+      "min": 10,
+      "max": 1000,
+      "unit": "ms"
+    },
+    {
+      "name": "Duty",
+      "type": "range",
+      "min": 25,
+      "max": 100
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "THRSH",
+      "type": "range",
+      "min": 0,
+      "max": 30
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "STEREODLY": [
+    {
+      "name": "TimeL",
+      "type": "range",
+      "min": 1,
+      "max": 2000,
+      "unit": "ms"
+    },
+    {
+      "name": "TimeR",
+      "type": "range",
+      "min": 1,
+      "max": 2000,
+      "unit": "ms"
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "LchFB",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "RchFB",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "LchLv",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "RchLv",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "HDHALL": [
+    {
+      "name": "PreD",
+      "type": "range",
+      "min": 1,
+      "max": 200,
+      "unit": "ms"
+    },
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "LoDMP",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "HiDMP",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "HALL": [
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 1,
+      "max": 30
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "PreD",
+      "type": "range",
+      "min": 1,
+      "max": 100,
+      "unit": "ms"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "ROOM": [
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 1,
+      "max": 30
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "PreD",
+      "type": "range",
+      "min": 1,
+      "max": 100,
+      "unit": "ms"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "TILEDROOM": [
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 1,
+      "max": 30
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "PreD",
+      "type": "range",
+      "min": 1,
+      "max": 100,
+      "unit": "ms"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "ARENA": [
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 1,
+      "max": 30
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "PreD",
+      "type": "range",
+      "min": 1,
+      "max": 100,
+      "unit": "ms"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "PLATE": [
+    {
+      "name": "PreD",
+      "type": "range",
+      "min": 1,
+      "max": 200,
+      "unit": "ms"
+    },
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Color",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "LoDMP",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "HiDMP",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "AIR": [
+    {
+      "name": "Size",
+      "type": "range",
+      "min": 1,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Ref",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "EARLYREF": [
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 1,
+      "max": 30
+    },
+    {
+      "name": "Shape",
+      "type": "range",
+      "min": -10,
+      "max": 10
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "MODREVERB": [
+    {
+      "name": "Depth",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 1,
+      "max": 30
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Rate",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "PreD",
+      "type": "range",
+      "min": 1,
+      "max": 100,
+      "unit": "ms"
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "SLAPBACK": [
+    {
+      "name": "Time",
+      "type": "range",
+      "min": 1,
+      "max": 1000,
+      "unit": "ms"
+    },
+    {
+      "name": "Decay",
+      "type": "range",
+      "min": 1,
+      "max": 30
+    },
+    {
+      "name": "Mix",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "F.B",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "DRBal",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "PARTICLER": [
+    {
+      "name": "DWELL",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "GAIN",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "MODE",
+      "type": "enum",
+      "options": [
+        "STBL",
+        "CRTCL",
+        "HZD"
+      ]
+    },
+    {
+      "name": "MIX",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "MONO",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ]
+    },
+    {
+      "name": "Tail",
+      "type": "enum",
+      "options": [
+        "OFF",
+        "ON"
+      ],
+      "notes": "Se ON la coda dell'effetto continua anche a effetto spento"
+    }
+  ],
+  "PEDALVX": [
+    {
+      "name": "Freq",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "DryMX",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "PEDALWAH": [
+    {
+      "name": "Freq",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "DryMX",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "PDLRESO": [
+    {
+      "name": "Freq",
+      "type": "range",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "Reso",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    },
+    {
+      "name": "DryMX",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "BAPDLPIT": [
+    {
+      "name": "Color",
+      "type": "range",
+      "min": 1,
+      "max": 9,
+      "notes": "vedi Tabella 4"
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Bend",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Mode",
+      "type": "enum",
+      "options": [
+        "Up",
+        "Down"
+      ]
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ],
+  "BAPDLMNP": [
+    {
+      "name": "Color",
+      "type": "range",
+      "min": 1,
+      "max": 9,
+      "notes": "vedi Tabella 4"
+    },
+    {
+      "name": "Tone",
+      "type": "range",
+      "min": 0,
+      "max": 10
+    },
+    {
+      "name": "Bend",
+      "type": "range",
+      "min": 0,
+      "max": 100
+    },
+    {
+      "name": "Mode",
+      "type": "enum",
+      "options": [
+        "Up",
+        "Down"
+      ]
+    },
+    {
+      "name": "Level",
+      "type": "range",
+      "min": 0,
+      "max": 150
+    }
+  ]
+}
