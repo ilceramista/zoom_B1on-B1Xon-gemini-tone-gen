@@ -10,7 +10,7 @@ let Gemini Ai help you to build a zoom pathces, prompt to Ai and check and edit 
 
 L'applicazione **Zoom AI Sound Engineer** permette di programmare la pedaliera multieffetto Zoom B1Xon / B1on semplicemente descrivendo il suono desiderato  (es. *"Voglio un suono distorto per basso tipo Muse Hysteria"*).
 
-L'AI analizza la richiesta, consulta il catalogo hardware dei 105 algoritmi disponibili, regola le manopole quasi sempre perfettamente, in questo ho avuto difficoltà e **programma istantaneamente la pedaliera via USB** oppure genera un file `.B1Xon` pronto da salvare.
+L'AI analizza la richiesta, consulta il catalogo hardware dei 105 algoritmi disponibili, regola le manopole quasi sempre perfettamente, in questo ho avuto difficoltà e **programma istantaneamente la pedaliera via USB** oppure genera un file `.B1Xon` pronto da salvare.C'è da tener presente che qualora l'app non riuscisse al 100% a immettere i parametri giusti sul device fisico, l'app ci restituisce sempre al nostro prompt un prompt di risposta con inclusi i valori che ha scelto,e questi vengono scelti usano apputo l'immensa conoscenza che ha il modello di linguaggio gemini,al massimo basta quindi un rapido controllo ed un editing manuale dei pochi che ha fallito.In ogni caso l'Ai ci fornisce uno schema ed una chain fx interessante.
 
 ---
 
